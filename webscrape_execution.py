@@ -6,6 +6,7 @@ pd.set_option('display.max_colwidth', 500)
 import time 
 import requests
 import random
+import openpyxl
 
 authors = []
 
@@ -32,3 +33,6 @@ df['Quotes'] = quotes
 
 # print out the Pandas DataFrame
 print(df)
+
+# create Excel file (.xlsx)
+df.to_excel("webscrape.xlsx")
