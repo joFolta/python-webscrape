@@ -1,19 +1,26 @@
 # python-webscrape
 ![App excel data output preview](img/preview.png)
-
 ## Description
-To familiarize myself with Python, I followed this [tutorial](https://towardsdatascience.com/how-to-collect-data-from-any-website-cb8fad9e9ec5) to learn how to scrape data from websites using Python. From the pandas [docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html), I was able to make the app export the data to an Excel .xlsx file. 
+To familiarize myself with Python, I followed this [tutorial](https://towardsdatascience.com/how-to-collect-data-from-any-website-cb8fad9e9ec5) to learn how to scrape data from websites using Python. Data was scraped from this [website](http://quotes.toscrape.com/). From the pandas [docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html), I was able to make the app export the data to an Excel .xlsx file. 
 
 
 ## Setup
-- setup virtual environment
+#### Setup virtual environment...
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- In VSCode, select your new environment by using the Python: Select Interpreter command from the Command Palette (Shift+Cmmd+P). (Should already be selected as ./.venv/bin/python3)
+#### Install packages in the environment
 - `pip install beautifulsoup4 pandas requests openpyxl`
-- time and random modules: no need to pip install as time is a default module in the python library; just `import time`, `import random`
+- No need to pip install as time and random are default modules in the python library; just `import time`, `import random`
+#### Run the app
+- `python3 webscrape_execution.py`
+- In VSCode, press the play button in your virtual environment
+
 
 ## What I learned about Python 3: 
-- the power and ease of using python (statistics, graphs, scraping data, etc.)
+- The power and ease of using python (statistics, graphs, scraping data, etc.)
 - `len()` to get length of an array
-- variations of the `for` loop
+- Variations of the `for` loop
 - `.extend()` vs `.append()` https://stackoverflow.com/questions/252703/what-is-the-difference-between-pythons-list-methods-append-and-extend
 ```
 authors.extend([i.text for i in html.find_all(class_='author')])
@@ -22,3 +29,4 @@ authors.extend([i.text for i in html.find_all(class_='author')])
 ```
 urls = [f"http://quotes.toscrape.com/page/{i}" for i in range(1, 11)]
 ```
+- And more!!! Much more to learn about Python~🐍🐍🐍! 
