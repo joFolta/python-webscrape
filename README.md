@@ -11,7 +11,7 @@ To familiarize myself with Python, I followed this [tutorial](https://towardsdat
 - In VSCode, select your new environment by using the Python: Select Interpreter command from the Command Palette (Shift+Cmmd+P). (Should already be selected as ./.venv/bin/python3)
 #### Install packages in the environment
 - `pip install beautifulsoup4 pandas requests openpyxl`
-- No need to pip install as time and random are default modules in the python library; just `import time`, `import random`
+- No need to pip install `time` and `random` as they are default modules in the python library; just `import time`, `import random`
 #### Run the app
 - `python3 webscrape_execution.py`
 - In VSCode, press the play button in your virtual environment
@@ -19,6 +19,7 @@ To familiarize myself with Python, I followed this [tutorial](https://towardsdat
 
 ## What I learned about Python 3: 
 - The power and ease of using python (statistics, graphs, scraping data, etc.)
+- Using virtual environments with Python and installing packages within them to prevent polluting the global environment. 
 - `len()` to get length of an array
 - Variations of the `for` loop
 - `.extend()` vs `.append()` https://stackoverflow.com/questions/252703/what-is-the-difference-between-pythons-list-methods-append-and-extend
